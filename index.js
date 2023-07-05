@@ -30,7 +30,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("send_login_data", (data) => {
-    console.log(data)
+    console.log(data.connectionId, 'conneeeectttttiiiiooonnnn idddd')
     socket.to(data.connectionId).emit("receive_login_data", data);
   });
 
